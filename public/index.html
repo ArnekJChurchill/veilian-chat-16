@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veilian Chat 16</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://js.pusher.com/8.0/pusher.min.js"></script>
+</head>
+<body>
+
+<!-- LOGIN / SIGNUP -->
+<div id="loginBox">
+  <h2>Veilian Chat 16</h2>
+  <input type="text" id="username" placeholder="Username e.g. @exampleuser">
+  <input type="password" id="password" placeholder="Password">
+  <button id="loginBtn">Login</button>
+  <button id="signupBtn">Sign Up</button>
+</div>
+
+<!-- CHAT -->
+<div id="chatContainer" style="display:none;">
+  <div id="chatHeader">
+    <h2>Veilian Chat</h2>
+    <button id="closeChat">X</button>
+  </div>
+
+  <div id="chatBox"></div>
+
+  <div id="messageBox">
+    <input type="text" id="messageInput" placeholder="Type a message...">
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <!-- MODERATOR PANEL -->
+  <div id="adminPanel" style="display:none;">
+    <h3>Moderator Panel</h3>
+    <input type="text" id="banUsername" placeholder="Username to ban/unban">
+    <button id="banBtn">Ban</button>
+    <button id="unbanBtn">Unban</button>
+    <div id="bannedList"></div>
+  </div>
+</div>
+
+<!-- PROFILE MODAL -->
+<div id="profileModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="closeProfile">&times;</span>
+    <div id="profileInfo">
+      <img id="profileAvatar" src="avatars/default.png" class="circular-avatar">
+      <h2 id="profileDisplayName"></h2>
+      <p id="profileUsername"></p>
+      <p id="profileBio"></p>
+      <p id="profileJoinDate"></p>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
 
