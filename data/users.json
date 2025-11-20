@@ -1,1 +1,13 @@
-
+{
+  "users": [
+    {
+      "username": "@ArnekChurchill",
+      "password": "988585aw",
+      "isModerator": true,
+      "displayName": "Arnek Churchill",
+      "avatar": "default.png",
+      "bio": "i am GOD",
+      "joinDate": "2025-11-20T12:00:00Z"
+    }
+  ]
+}
